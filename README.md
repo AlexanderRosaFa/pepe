@@ -1,75 +1,18 @@
-# 📅 Mi Calendario Escolar — PWA
-
-App instalable para celular con calendario de clases, materias, objetivos y tiempo de juego.
-
----
-
-## 🚀 Subir a Vercel (gratis, ~5 minutos)
-
-### Paso 1 — Sube el proyecto a GitHub
-1. Ve a [github.com](https://github.com) y crea una cuenta si no tienes
-2. Crea un repositorio nuevo llamado `calendario-escolar` (público)
-3. Sube todos los archivos de esta carpeta
-
-   Si tienes Git instalado:
-   ```bash
-   git init
-   git add .
-   git commit -m "primer commit"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/calendario-escolar.git
-   git push -u origin main
-   ```
-
-   O arrastra la carpeta desde la web de GitHub → "uploading an existing file"
-
-### Paso 2 — Conecta con Vercel
-1. Ve a [vercel.com](https://vercel.com) y crea cuenta con tu GitHub
-2. Clic en **"Add New Project"**
-3. Selecciona el repositorio `calendario-escolar`
-4. Vercel detecta Vite automáticamente → clic en **Deploy**
-5. En ~1 minuto tendrás una URL tipo: `calendario-escolar.vercel.app`
-
----
-
-## 📱 Instalar en el celular
-
-### Android (Chrome)
-1. Abre la URL en Chrome
-2. Toca el menú ⋮ → **"Agregar a pantalla de inicio"**
-3. ¡Listo! Aparece como app en tu pantalla
-
-### iPhone (Safari)
-1. Abre la URL en Safari (no Chrome)
-2. Toca el ícono compartir □↑ → **"Agregar a pantalla de inicio"**
-3. ¡Listo!
-
----
-
-## 🛠 Personalizar datos
-
-Edita el archivo `src/App.jsx`:
-
-- **Materias** → array `SUBJECTS` (línea ~14)
-- **Horario** → objeto `SCHEDULE` (línea ~33)
-- **Objetivos** → array `INITIAL_GOALS` (línea ~62)
-
-Cada vez que guardes cambios y los subas a GitHub, Vercel actualiza la app automáticamente.
-
----
-
-## 📦 Estructura del proyecto
-
-```
-calendario-pwa/
-├── public/
-│   ├── icon-192.png     # Ícono de la app
-│   └── icon-512.png
-├── src/
-│   ├── App.jsx          # Toda la app (aquí editas los datos)
-│   ├── main.jsx         # Punto de entrada
-│   └── index.css        # Estilos base
-├── index.html
-├── vite.config.js       # Config PWA
-└── package.json
-```
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1B2B4B" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Calendario" />
+    <meta name="description" content="Calendario escolar con materias, objetivos y tiempo de juego" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>Mi Calendario Escolar</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
